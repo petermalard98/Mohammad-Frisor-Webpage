@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohammad Frisør – Frisør i Storgata 81, Tromsø</title>
+<meta name="description" content="Frisør og barber i Tromsø sentrum. Herreklipp 300,-, dameklipp 400,-. Åpent man–lør 08–19. Ring 412 12 776.">
+<meta name="theme-color" content="#111">
+<meta property="og:title" content="Mohammad Frisør – Tromsø">
+<meta property="og:description" content="Frisør og barber i Storgata 81. 4,7 ★ på Google. Man–lør 08–19.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111'/><text x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23c9a35b'>M</text></svg>">
+<link rel="preload" href="fonts/oswald-600.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Mohammad Frisør AS",
+  "telephone": "+4741212776",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Storgata 81",
+    "postalCode": "9008",
+    "addressLocality": "Tromsø",
+    "addressCountry": "NO"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 69.6507869, "longitude": 18.9575226 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00", "closes": "19:00"
+  }],
+  "priceRange": "kr 50–700",
+  "hasMap": "https://maps.app.goo.gl/jwR9XG92NZsN2Xwx9",
+  "sameAs": [
+    "https://www.instagram.com/mohammad_frisor/",
+    "https://www.facebook.com/p/Mohammad-Fris%C3%B8r-100054501787553/"
+  ]
+}
+</script>
+<style>
+@font-face {
+  font-family: "Oswald";
+  src: url("fonts/oswald-600.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+:root {
+  --bg: #111;
+  --surface: #1b1b1b;
+  --line: #2c2c2c;
+  --text: #f2f0ec;
+  --muted: #b3ada3;
+  --accent: #c9a35b;
+  --accent-text: #111;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+h1, h2 {
+  font-family: "Oswald", Impact, "Arial Narrow", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  line-height: 1.1;
+  margin: 0 0 .6em;
+}
+h1 { font-size: clamp(2.6rem, 11vw, 5rem); }
+h2 { font-size: 1.8rem; color: var(--accent); }
+a { color: var(--accent); }
+.wrap {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 max(16px, env(safe-area-inset-left)) 0 max(16px, env(safe-area-inset-right));
+}
+section { padding: 3.5rem 0; border-top: 1px solid var(--line); }
+
+.hero {
+  min-height: 85svh; display: grid; align-content: end; padding: 3rem 0;
+  background: linear-gradient(to top, var(--bg) 5%, rgba(17,17,17,.55) 60%, rgba(17,17,17,.35)), url("img/main.avif") center / cover;
+}
+.hero h1 { text-shadow: 0 2px 12px rgba(0,0,0,.5); }
+.hero .tag { color: var(--text); }
+.split { display: grid; gap: 3.5rem; }
+.reviews { display: grid; gap: 1rem; }
+@media (min-width: 800px) {
+  .split { grid-template-columns: 3fr 2fr; }
+  .reviews { grid-template-columns: repeat(3, 1fr); }
+  .gallery { grid-template-columns: repeat(3, 1fr) !important; }
+}
+.tag { color: var(--muted); font-size: 1.15rem; margin: 0 0 2rem; }
+.rating { display: inline-block; margin-bottom: 1.5rem; color: var(--text); text-decoration: none; }
+.rating b { color: var(--accent); }
+.cta { display: flex; flex-wrap: wrap; gap: .75rem; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 52px; padding: 0 1.4rem; border-radius: 8px;
+  font-weight: 700; text-decoration: none;
+  touch-action: manipulation; user-select: none;
+  transition: transform .12s ease-out, background-color .15s ease-out;
+}
+.btn:active { transform: scale(.97); }
+.btn-main { background: var(--accent); color: var(--accent-text); }
+.btn-alt { border: 2px solid var(--accent); color: var(--accent); }
+@media (hover: hover) and (pointer: fine) {
+  .btn-main:hover { background: #d8b673; }
+  .btn-alt:hover { background: rgba(201,163,91,.12); }
+}
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+table { width: 100%; border-collapse: collapse; }
+td { padding: .6rem 0; border-bottom: 1px solid var(--line); }
+td:last-child { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; padding-left: 1rem; }
+.note { color: var(--muted); font-size: .9rem; margin-top: 1rem; }
+
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.gallery img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; display: block; }
+
+blockquote { margin: 0; padding: 1.2rem; background: var(--surface); border-radius: 8px; }
+blockquote p { margin: 0 0 .5rem; }
+blockquote footer { color: var(--muted); font-size: .9rem; }
+
+dl { display: grid; grid-template-columns: auto 1fr; gap: .4rem 1.5rem; margin: 0 0 1.5rem; }
+dt { color: var(--muted); }
+dd { margin: 0; }
+address { font-style: normal; margin-bottom: 1.5rem; }
+
+.site-foot { padding: 2rem 0 max(2rem, env(safe-area-inset-bottom)); color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
+.site-foot p { margin: .2rem 0; }
+
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero"><div class="wrap">
+    <a class="rating" href="https://maps.app.goo.gl/jwR9XG92NZsN2Xwx9"><b>★ 4,7</b> · 331 anmeldelser på Google</a>
+    <h1>Mohammad Frisør</h1>
+    <p class="tag">Frisør og barber i Storgata 81, Tromsø sentrum.</p>
+    <div class="cta">
+      <a class="btn btn-main" href="tel:+4741212776">Ring 412 12 776</a>
+      <a class="btn btn-alt" href="https://maps.app.goo.gl/jwR9XG92NZsN2Xwx9">Veibeskrivelse</a>
+    </div>
+  </div></header>
+
+  <section id="priser">
+    <div class="wrap split">
+      <div>
+      <h2>Priser</h2>
+      <table>
+        <tr><td>Herreklipp</td><td>300,-</td></tr>
+        <tr><td>Barbering</td><td>fra 220,-</td></tr>
+        <tr><td>Dameklipp</td><td>400,-</td></tr>
+        <tr><td>Barn</td><td>230,-</td></tr>
+        <tr><td>Farging / striping</td><td>fra 700,-</td></tr>
+        <tr><td>Styling / føning</td><td>fra 300,-</td></tr>
+        <tr><td>Bryn – farging</td><td>200,-</td></tr>
+        <tr><td>Bryn – trådforming</td><td>200,-</td></tr>
+        <tr><td>Vipper – farging</td><td>250,-</td></tr>
+        <tr><td>Øre – piercing</td><td>fra 275,-</td></tr>
+        <tr><td>Hårvask</td><td>fra 50,-</td></tr>
+      </table>
+      <p class="note">Alle priser inkl. mva. Drop-in eller ring for time.</p>
+      </div>
+      <div id="kontakt">
+      <h2>Åpningstider</h2>
+      <dl>
+        <dt>Man–lør</dt><dd>08–19</dd>
+        <dt>Søndag</dt><dd>Stengt</dd>
+      </dl>
+      <h2>Finn oss</h2>
+      <address>
+        Storgata 81, 9008 Tromsø<br>
+        <a href="tel:+4741212776">412 12 776</a>
+      </address>
+      <div class="cta">
+        <a class="btn btn-alt" href="https://maps.app.goo.gl/jwR9XG92NZsN2Xwx9">Google Maps</a>
+        <a class="btn btn-alt" href="https://www.instagram.com/mohammad_frisor/">Instagram</a>
+        <a class="btn btn-alt" href="https://www.facebook.com/p/Mohammad-Fris%C3%B8r-100054501787553/">Facebook</a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bilder">
+    <div class="wrap">
+      <h2>Bilder</h2>
+      <!-- ponytail: add/remove <img> lines to match files in img/ -->
+      <div class="gallery">
+        <img src="img/001.jpg" alt="Mohammad med fornøyde kunder i salongen" loading="lazy" width="1440" height="1800">
+        <img src="img/002.jpg" alt="Hårklipp fra Mohammad Frisør" loading="lazy" width="1440" height="1800">
+        <img src="img/003.jpg" alt="Hårklipp fra Mohammad Frisør" loading="lazy" width="1440" height="1800">
+        <img src="img/005.webp" alt="Hårklipp fra Mohammad Frisør" loading="lazy" width="1440" height="1800">
+        <img src="img/006.webp" alt="Hårklipp fra Mohammad Frisør" loading="lazy" width="1440" height="1800">
+        <img src="img/007.webp" alt="Hårklipp fra Mohammad Frisør" loading="lazy" width="1440" height="1800">
+      </div>
+      <p class="note">Mer på <a href="https://www.instagram.com/mohammad_frisor/">Instagram</a>.</p>
+    </div>
+  </section>
+
+  <section id="omtaler">
+    <div class="wrap">
+      <h2>Omtaler</h2>
+      <div class="reviews">
+      <blockquote>
+        <p>«Jeg anbefaler dette stedet på det sterkeste! 10/10 hårklipp, flinke ansatte og hyggelig atmosfære.»</p>
+        <footer>yaboi</footer>
+      </blockquote>
+      <blockquote>
+        <p>«Bestandig god service. Kjempefornøyd med klippen. Bestandig hyggelig å komme innom Mohammed Frisør. Anbefales.»</p>
+        <footer>Atle</footer>
+      </blockquote>
+      <blockquote lang="en">
+        <p>“I am very pleased with the specialist's work; I will come back again – I really like everything.”</p>
+        <footer>Daniil</footer>
+      </blockquote>
+      </div>
+      <p style="margin-top:1.5rem"><a href="https://maps.app.goo.gl/jwR9XG92NZsN2Xwx9">Se alle 331 omtaler på Google</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Mohammad Frisør AS · Org.nr. 934 592 050</p>
+    <p>Storgata 81, 9008 Tromsø · 412 12 776</p>
+  </div>
+</footer>
+</body>
+</html>
